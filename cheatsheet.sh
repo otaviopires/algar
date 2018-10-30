@@ -437,6 +437,7 @@ show configuration | display set | match 187.72.111.89
 show route receive-protocol bgp 189.28.0.251
 show route table inet 192.185.216.141 
 show bgp summary | match 200.146.208.85 
+sh ip bgp regexp ^(16735)+_(262760) 
 
 ping 200.160.2.3 source 200.146.280.85 repeat 100
 
