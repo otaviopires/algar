@@ -439,8 +439,18 @@ show route table inet 192.185.216.141
 show bgp summary | match 200.146.208.85 
 sh ip bgp regexp ^(16735)+_(262760) 
 
+show configuration | display set | match ae2 //INTERFACE AGREGADA (power channel, LACP)
+show interface ae2 terse // mostrar o estado do protocolo
+show chassis routing 
+show log messages | match <ip bgp >
+show vpls connections up-down instance VPLS-123 history
+show l2-instance connections up-down interface xe-2/2/1 history
+ 
 ping 200.160.2.3 source 200.146.280.85 repeat 100
 
+200.225.199.x - Loopback PE 
+MX - JUNIPER
+ASR - CISCO
 
 JUNIPER:
 show interfaces et-0/0/4 deions 
